@@ -1,0 +1,19 @@
+# Settings for retrieval and the pipeline. Change a value here and re-run; no code edits needed.
+
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+
+chunking:
+  max_chars: 900          # longest chunk text; MiniLM reads ~256 tokens (~1,000 characters incl. the label prefix)
+  drop_repealed: true     # "Repealed" placeholders carry no legal content, so they're left out of the index
+
+retrieval:
+  top_k: 3                # chunks returned per province
+  eval_k: [1, 3, 5]       # k values reported in Recall@k
+  abstain_threshold: null # Step 2.5: tested, no cut-off separates abstain questions (results/abstain_threshold.json)
+
+paths:
+  kb_sections: data/processed/kb_sections.jsonl
+  kb_chunks: data/processed/kb_chunks.jsonl
+  vector_store: vector_store
+  evaluation: data/evaluation.jsonl
+  retrieval_metrics: results/retrieval_metrics.json

@@ -1,0 +1,9 @@
+.venv/
+.DS_Store
+.Rhistory
+__pycache__/
+notebooks/.ipynb_checkpoints/
+GUIDE.md
+docs/personal_notes.md
+models/
+vector_store/

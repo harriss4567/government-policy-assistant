@@ -1,0 +1,1658 @@
+{
+  "Ontario": {
+    "1": {
+      "part": "I",
+      "part_title": "Definitions"
+    },
+    "2": {
+      "part": "II",
+      "part_title": "Information Concerning Rights And Obligations"
+    },
+    "3": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "3.1": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "4": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "5": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "5.1": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "6": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "7": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "8": {
+      "part": "III",
+      "part_title": "How This Act Applies"
+    },
+    "8.1": {
+      "part": "III.1",
+      "part_title": "Job Postings"
+    },
+    "8.2": {
+      "part": "III.1",
+      "part_title": "Job Postings"
+    },
+    "8.3": {
+      "part": "III.1",
+      "part_title": "Job Postings"
+    },
+    "8.4": {
+      "part": "III.1",
+      "part_title": "Job Postings"
+    },
+    "8.5": {
+      "part": "III.1",
+      "part_title": "Job Postings"
+    },
+    "8.6": {
+      "part": "III.1",
+      "part_title": "Job Postings"
+    },
+    "8.7": {
+      "part": "III.1",
+      "part_title": "Job Postings"
+    },
+    "9": {
+      "part": "IV",
+      "part_title": "Continuity Of Employment"
+    },
+    "10": {
+      "part": "IV",
+      "part_title": "Continuity Of Employment"
+    },
+    "11": {
+      "part": "V",
+      "part_title": "Payment Of Wages"
+    },
+    "12": {
+      "part": "V",
+      "part_title": "Payment Of Wages"
+    },
+    "12.1": {
+      "part": "V",
+      "part_title": "Payment Of Wages"
+    },
+    "13": {
+      "part": "V",
+      "part_title": "Payment Of Wages"
+    },
+    "14": {
+      "part": "V",
+      "part_title": "Payment Of Wages"
+    },
+    "14.1": {
+      "part": "V.1",
+      "part_title": "Employee Tips And Other Gratuities"
+    },
+    "14.2": {
+      "part": "V.1",
+      "part_title": "Employee Tips And Other Gratuities"
+    },
+    "14.3": {
+      "part": "V.1",
+      "part_title": "Employee Tips And Other Gratuities"
+    },
+    "14.4": {
+      "part": "V.1",
+      "part_title": "Employee Tips And Other Gratuities"
+    },
+    "14.5": {
+      "part": "V.1",
+      "part_title": "Employee Tips And Other Gratuities"
+    },
+    "15": {
+      "part": "VI",
+      "part_title": "Records"
+    },
+    "15.1": {
+      "part": "VI",
+      "part_title": "Records"
+    },
+    "16": {
+      "part": "VI",
+      "part_title": "Records"
+    },
+    "17": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "17.1": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "17.2": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "17.3": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "18": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "19": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "20": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "21": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "21.1": {
+      "part": "VII",
+      "part_title": "Hours Of Work And Eating Periods"
+    },
+    "21.1.1": {
+      "part": "VII.0.1",
+      "part_title": "Written Policy On Disconnecting From Work"
+    },
+    "21.1.2": {
+      "part": "VII.0.1",
+      "part_title": "Written Policy On Disconnecting From Work"
+    },
+    "21.2": {
+      "part": "VII.1",
+      "part_title": "Three Hour Rule"
+    },
+    "22": {
+      "part": "VIII",
+      "part_title": "Overtime Pay"
+    },
+    "22.1": {
+      "part": "VIII",
+      "part_title": "Overtime Pay"
+    },
+    "22.2": {
+      "part": "VIII",
+      "part_title": "Overtime Pay"
+    },
+    "23": {
+      "part": "IX",
+      "part_title": "Minimum Wage"
+    },
+    "23.0.1": {
+      "part": "IX",
+      "part_title": "Minimum Wage"
+    },
+    "23.1": {
+      "part": "IX",
+      "part_title": "Minimum Wage"
+    },
+    "24": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "25": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "26": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "27": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "28": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "29": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "30": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "31": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "32": {
+      "part": "X",
+      "part_title": "Public Holidays"
+    },
+    "33": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "34": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "35": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "35.1": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "35.2": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "36": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "37": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "38": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "39": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "40": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "41": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "41.1": {
+      "part": "XI",
+      "part_title": "Vacation With Pay"
+    },
+    "41.1.1": {
+      "part": "XI.1",
+      "part_title": "Written Policy On Electronic Monitoring"
+    },
+    "41.2": {
+      "part": "XII",
+      "part_title": "Equal Pay For Equal Work"
+    },
+    "42": {
+      "part": "XII",
+      "part_title": "Equal Pay For Equal Work"
+    },
+    "42.1": {
+      "part": "XII",
+      "part_title": "Equal Pay For Equal Work"
+    },
+    "42.2": {
+      "part": "XII",
+      "part_title": "Equal Pay For Equal Work"
+    },
+    "42.3": {
+      "part": "XII",
+      "part_title": "Equal Pay For Equal Work"
+    },
+    "43": {
+      "part": "XIII",
+      "part_title": "Benefit Plans"
+    },
+    "44": {
+      "part": "XIII",
+      "part_title": "Benefit Plans"
+    },
+    "45": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "46": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "46.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "47": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "48": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.2": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.3": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.4": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.5": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.6": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.7": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "49.8": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "50": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "50.0.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "50.0.2": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "50.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "50.1.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "50.2": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "50.3": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "51": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "51.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "52": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "52.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "53": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "53.1": {
+      "part": "XIV",
+      "part_title": "Leaves Of Absence"
+    },
+    "53.2": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "54": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "55": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "56": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "57": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "58": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "59": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "60": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "61": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "62": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "63": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "64": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "65": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "66": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "66.1": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "67": {
+      "part": "XV",
+      "part_title": "Termination And Severance Of Employment"
+    },
+    "67.1": {
+      "part": "XV.1",
+      "part_title": "Non-Compete Agreements"
+    },
+    "67.2": {
+      "part": "XV.1",
+      "part_title": "Non-Compete Agreements"
+    },
+    "68": {
+      "part": "XVI",
+      "part_title": "Lie Detectors"
+    },
+    "69": {
+      "part": "XVI",
+      "part_title": "Lie Detectors"
+    },
+    "70": {
+      "part": "XVI",
+      "part_title": "Lie Detectors"
+    },
+    "71": {
+      "part": "XVI",
+      "part_title": "Lie Detectors"
+    },
+    "72": {
+      "part": "XVII",
+      "part_title": "Retail Business Establishments"
+    },
+    "73": {
+      "part": "XVII",
+      "part_title": "Retail Business Establishments"
+    },
+    "74": {
+      "part": "XVIII",
+      "part_title": "Reprisal"
+    },
+    "74.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.2": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.3": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.4": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.5": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.6": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.7": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.8": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.9": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.10": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.11": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.12": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.13": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.14": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.1.15": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.2": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.2.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.3": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.4": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.4.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.4.2": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.4.3": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.5": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.6": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.7": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.8": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.9": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.10": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.10.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.11": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.11.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.12": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.12.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.13": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.13.1": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.14": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.15": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.16": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.17": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.18": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "74.19": {
+      "part": "XVIII.1",
+      "part_title": "Temporary Help Agencies And Recruiters"
+    },
+    "75": {
+      "part": "XIX",
+      "part_title": "Building Services Providers"
+    },
+    "76": {
+      "part": "XIX",
+      "part_title": "Building Services Providers"
+    },
+    "77": {
+      "part": "XIX",
+      "part_title": "Building Services Providers"
+    },
+    "78": {
+      "part": "XIX",
+      "part_title": "Building Services Providers"
+    },
+    "79": {
+      "part": "XX",
+      "part_title": "Liability Of Directors"
+    },
+    "80": {
+      "part": "XX",
+      "part_title": "Liability Of Directors"
+    },
+    "81": {
+      "part": "XX",
+      "part_title": "Liability Of Directors"
+    },
+    "82": {
+      "part": "XX",
+      "part_title": "Liability Of Directors"
+    },
+    "83": {
+      "part": "XX",
+      "part_title": "Liability Of Directors"
+    },
+    "84": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "85": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "86": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "87": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "88": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "88.1": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "88.2": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "88.3": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "89": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "90": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "91": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "91.1": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "92": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "93": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "94": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "95": {
+      "part": "XXI",
+      "part_title": "Who Enforces This Act And What They Can Do"
+    },
+    "96": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "96.1": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "97": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "98": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "99": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "100": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "101": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "101.1": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "101.2": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "102": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "102.1": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "103": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "104": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "105": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "106": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "107": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "108": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "109": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "110": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "111": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "112": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "113": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "114": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "115": {
+      "part": "XXII",
+      "part_title": "Complaints And Enforcement"
+    },
+    "115.1": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "116": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "117": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "118": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "119": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "120": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "121": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "122": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "123": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "124": {
+      "part": "XXIII",
+      "part_title": "Reviews By The Board"
+    },
+    "125": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "125.1": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "125.2": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "125.3": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "126": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "127": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "128": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "129": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "130": {
+      "part": "XXIV",
+      "part_title": "Collection"
+    },
+    "131": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "132": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "133": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "134": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "135": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "136": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "137": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "137.1": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "138": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "138.1": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "139": {
+      "part": "XXV",
+      "part_title": "Offences And Prosecutions"
+    },
+    "140": {
+      "part": "XXVI",
+      "part_title": "Miscellaneous Evidentiary Provisions"
+    },
+    "141": {
+      "part": "XXVII",
+      "part_title": "Regulations"
+    },
+    "142": {
+      "part": "XXVIII",
+      "part_title": "Transition"
+    },
+    "143": {
+      "part": "XXVIII",
+      "part_title": "Transition"
+    },
+    "144": {
+      "part": "XXVIII",
+      "part_title": "Transition"
+    },
+    "145": {
+      "part": "XXVIII",
+      "part_title": "Transition"
+    },
+    "146": {
+      "part": "XXVIII",
+      "part_title": "Transition"
+    }
+  },
+  "British Columbia": {
+    "1": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "2": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "3": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "3.1": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "4": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "5": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "6": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "7": {
+      "part": "1",
+      "part_title": "Introductory Provisions"
+    },
+    "8": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "9": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "9.1": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "10": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "11": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "12": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "13": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "14": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "15": {
+      "part": "2",
+      "part_title": "Hiring Employees"
+    },
+    "16": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "16.1": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "16.2": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "17": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "18": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "19": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "20": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "21": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "22": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "23": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "24": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "25": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "26": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "27": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "28": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "29": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "30": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "30.1": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "30.2": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "30.3": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "30.4": {
+      "part": "3",
+      "part_title": "Wages, Special Clothing, Records and Gratuities"
+    },
+    "31": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "32": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "33": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "34": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "35": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "36": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "37": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "38": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "39": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "40": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "41": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "42": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "43": {
+      "part": "4",
+      "part_title": "Hours of Work and Overtime"
+    },
+    "44": {
+      "part": "5",
+      "part_title": "Statutory Holidays"
+    },
+    "45": {
+      "part": "5",
+      "part_title": "Statutory Holidays"
+    },
+    "46": {
+      "part": "5",
+      "part_title": "Statutory Holidays"
+    },
+    "47": {
+      "part": "5",
+      "part_title": "Statutory Holidays"
+    },
+    "48": {
+      "part": "5",
+      "part_title": "Statutory Holidays"
+    },
+    "49": {
+      "part": "5",
+      "part_title": "Statutory Holidays"
+    },
+    "49.01": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "49.1": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "49.2": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "50": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "51": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.1": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.11": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.12": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.121": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.13": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.2": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.3": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.4": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "52.5": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "53": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "54": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "55": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "56": {
+      "part": "6",
+      "part_title": "Leaves and Jury Duty"
+    },
+    "57": {
+      "part": "7",
+      "part_title": "Annual Vacation"
+    },
+    "58": {
+      "part": "7",
+      "part_title": "Annual Vacation"
+    },
+    "59": {
+      "part": "7",
+      "part_title": "Annual Vacation"
+    },
+    "60": {
+      "part": "7",
+      "part_title": "Annual Vacation"
+    },
+    "61": {
+      "part": "7",
+      "part_title": "Annual Vacation"
+    },
+    "62": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "63": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "64": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "65": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "66": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "67": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "68": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "71": {
+      "part": "8",
+      "part_title": "Termination of Employment"
+    },
+    "72": {
+      "part": "9",
+      "part_title": "Variances"
+    },
+    "73": {
+      "part": "9",
+      "part_title": "Variances"
+    },
+    "73.1": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "74": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "75": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "76": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "76.1": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "77": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "77.1": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "78": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "78.1": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "78.2": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "79": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "80": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "81": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "82": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "83": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "84": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "84.1": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "84.2": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "84.3": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "85": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "86": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "86.1": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "86.2": {
+      "part": "10",
+      "part_title": "Investigations, Complaints and Determinations"
+    },
+    "87": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "88": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "89": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "90": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "91": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "92": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "93": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "94": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "95": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "96": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "97": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "98": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "99": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "100": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "101": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "101.1": {
+      "part": "11",
+      "part_title": "Enforcement"
+    },
+    "102": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "103": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "104": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "105": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "106": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "109": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "110": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "111": {
+      "part": "12",
+      "part_title": "Employment Standards Tribunal"
+    },
+    "112": {
+      "part": "13",
+      "part_title": "Appeals"
+    },
+    "113": {
+      "part": "13",
+      "part_title": "Appeals"
+    },
+    "114": {
+      "part": "13",
+      "part_title": "Appeals"
+    },
+    "115": {
+      "part": "13",
+      "part_title": "Appeals"
+    },
+    "116": {
+      "part": "13",
+      "part_title": "Appeals"
+    },
+    "117": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "118": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "119": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "120": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "121": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "122": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "123": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "124": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "125": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "126": {
+      "part": "14",
+      "part_title": "General Provisions"
+    },
+    "127": {
+      "part": "14",
+      "part_title": "General Provisions"
+    }
+  }
+}
