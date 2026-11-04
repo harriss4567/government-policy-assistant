@@ -1,0 +1,93 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "device": "mps",
+  "dtype": "float16",
+  "load_seconds": 5.1,
+  "peak_memory_gb": 3.35,
+  "decoding": "greedy, max_new_tokens=400",
+  "results": [
+    {
+      "id": "V003",
+      "prompt_tokens": 295,
+      "output_tokens": 126,
+      "seconds": 8.1,
+      "tokens_per_second": 15.6,
+      "checks": {
+        "valid_json": true,
+        "exact_keys": false,
+        "section_match": false,
+        "mandatory_match": true,
+        "quote_word_for_word": false,
+        "says_not_specified_when_expected": true
+      },
+      "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 49.6(2)\",\n  \"eligibility\": \"An employee who has been employed by an employer for at least six consecutive months\",\n  \"entitlement_or_requirement\": \"leave of absence without pay of up to 104 weeks\",\n  \"threshold\": \"if a child of the employee disappears and it is probable, considering the circumstances, that the child disappeared as a result of a crime\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "leaves_of_absence",
+        "section": "49.6(2)",
+        "eligibility": "Employee employed for at least six consecutive months; a child of the employee disappears and it is probable the disappearance resulted from a crime",
+        "entitlement_or_requirement": "Leave of absence without pay",
+        "threshold": "Up to 104 weeks; at least six consecutive months of employment",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "is entitled to a leave of absence without pay of up to 104 weeks if a child of the employee disappears"
+      }
+    },
+    {
+      "id": "V008",
+      "prompt_tokens": 352,
+      "output_tokens": 106,
+      "seconds": 6.5,
+      "tokens_per_second": 16.2,
+      "checks": {
+        "valid_json": true,
+        "exact_keys": true,
+        "section_match": false,
+        "mandatory_match": false,
+        "quote_word_for_word": false,
+        "says_not_specified_when_expected": true
+      },
+      "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 14.3(1)\",\n  \"eligibility\": \"Yes\",\n  \"entitlement_or_requirement\": \"may withhold or make a deduction\",\n  \"threshold\": \"if a statute of Ontario or Canada or a court order authorizes it\",\n  \"exceptions\": [\n    \"(2)\"\n  ],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "tips_and_gratuities",
+        "section": "14.3(1), 14.3(2)",
+        "eligibility": "A statute of Ontario or Canada or a court order authorizes it",
+        "entitlement_or_requirement": "Employer may withhold or deduct from tips or other gratuities",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [
+          "Does not apply if the statute or order requires remitting the amount to a third person and the employer fails to do so (s. 14.3(2))"
+        ],
+        "mandatory": "optional",
+        "supporting_quote": "if a statute of Ontario or Canada or a court order authorizes it"
+      }
+    },
+    {
+      "id": "V019",
+      "prompt_tokens": 272,
+      "output_tokens": 90,
+      "seconds": 5.6,
+      "tokens_per_second": 15.9,
+      "checks": {
+        "valid_json": true,
+        "exact_keys": true,
+        "section_match": false,
+        "mandatory_match": false,
+        "quote_word_for_word": false,
+        "says_not_specified_when_expected": false
+      },
+      "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"Notice period for termination\",\n  \"eligibility\": \"Any employee\",\n  \"entitlement_or_requirement\": \"Mandatory\",\n  \"threshold\": \"Once notice is given\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"(2)(a) or (b)\"\n}",
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "termination",
+        "section": "Not specified in the excerpt",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "Not specified in the excerpt",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "Not specified in the excerpt",
+        "supporting_quote": ""
+      }
+    }
+  ]
+}

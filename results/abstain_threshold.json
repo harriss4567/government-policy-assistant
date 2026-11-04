@@ -1,0 +1,56 @@
+{
+  "floor": 0.494,
+  "floor_rule": "5th percentile of top-1 similarity on 92 answerable train/val questions",
+  "nontest_answerable": {
+    "n": 92,
+    "min": 0.378,
+    "median": 0.685,
+    "max": 0.873
+  },
+  "test_answerable": {
+    "n": 35,
+    "min": 0.474,
+    "median": 0.655,
+    "max": 0.859
+  },
+  "test_should_abstain": {
+    "n": 3,
+    "min": 0.532,
+    "median": 0.588,
+    "max": 0.594
+  },
+  "abstain_caught": "0/3",
+  "answerable_wrongly_flagged": "1/35",
+  "abstain_pairs": [
+    {
+      "id": "Q27",
+      "jurisdiction": "Ontario",
+      "should_abstain": true,
+      "top1": 0.588,
+      "below_floor": false
+    },
+    {
+      "id": "Q28",
+      "jurisdiction": "British Columbia",
+      "should_abstain": true,
+      "top1": 0.594,
+      "below_floor": false
+    },
+    {
+      "id": "Q30",
+      "jurisdiction": "British Columbia",
+      "should_abstain": true,
+      "top1": 0.532,
+      "below_floor": false
+    }
+  ],
+  "flagged_answerable": [
+    {
+      "id": "Q11",
+      "jurisdiction": "British Columbia",
+      "should_abstain": false,
+      "top1": 0.474,
+      "below_floor": true
+    }
+  ]
+}

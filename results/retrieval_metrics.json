@@ -1,0 +1,203 @@
+{
+  "pairs_scored": 38,
+  "overall": {
+    "recall@1": 0.553,
+    "recall@3": 0.776,
+    "recall@5": 0.868
+  },
+  "by_category": {
+    "cross_jurisdiction_comparison": {
+      "recall@1": 0.562,
+      "recall@3": 0.938,
+      "recall@5": 1.0
+    },
+    "dates_thresholds": {
+      "recall@1": 0.667,
+      "recall@3": 0.667,
+      "recall@5": 0.833
+    },
+    "direct_extraction": {
+      "recall@1": 0.6,
+      "recall@3": 0.6,
+      "recall@5": 0.8
+    },
+    "exceptions": {
+      "recall@1": 0.8,
+      "recall@3": 1.0,
+      "recall@5": 1.0
+    },
+    "insufficient_evidence": {
+      "recall@1": 0.0,
+      "recall@3": 0.375,
+      "recall@5": 0.375
+    }
+  },
+  "by_phrasing": {
+    "casual": {
+      "recall@1": 0.56,
+      "recall@3": 0.68,
+      "recall@5": 0.82
+    },
+    "precise": {
+      "recall@1": 0.538,
+      "recall@3": 0.962,
+      "recall@5": 0.962
+    }
+  },
+  "by_jurisdiction": {
+    "British Columbia": {
+      "recall@1": 0.579,
+      "recall@3": 0.816,
+      "recall@5": 0.868
+    },
+    "Ontario": {
+      "recall@1": 0.526,
+      "recall@3": 0.737,
+      "recall@5": 0.868
+    }
+  },
+  "misses_at_top_k": [
+    {
+      "id": "Q01",
+      "jurisdiction": "Ontario",
+      "question": "I've been working in Toronto for about 3 years. How much paid time off am I supposed to get each year?",
+      "gold": [
+        "33"
+      ],
+      "retrieved": [
+        "15(4) (0.57)",
+        "50.1(1.3) (0.55)",
+        "63(2.4) (0.54)",
+        "49.7(4) (0.54)",
+        "33(4) (0.54)"
+      ]
+    },
+    {
+      "id": "Q05",
+      "jurisdiction": "Ontario",
+      "question": "I work in Toronto and sometimes end up doing 48 hours a week. When should I start getting extra pay?",
+      "gold": [
+        "22"
+      ],
+      "retrieved": [
+        "11(5) (0.54)",
+        "18 (0.53)",
+        "27(2) (0.53)",
+        "30(2) (0.52)",
+        "63(2.3) (0.51)"
+      ]
+    },
+    {
+      "id": "Q06",
+      "jurisdiction": "British Columbia",
+      "question": "I just finished my first year working in BC. Am I supposed to get two weeks off now?",
+      "gold": [
+        "57"
+      ],
+      "retrieved": [
+        "1(1) *pay period* (0.52)",
+        "52.1(4) (0.52)",
+        "49.01(2) (0.51)",
+        "50(3) (0.49)",
+        "49.01(10) (0.49)"
+      ]
+    },
+    {
+      "id": "Q08",
+      "jurisdiction": "British Columbia",
+      "question": "I'm working a 10-hour shift in BC today. Should the last couple of hours be paid at a higher rate?",
+      "gold": [
+        "40"
+      ],
+      "retrieved": [
+        "37(5) (0.54)",
+        "37(4) (0.54)",
+        "34(3) (0.53)",
+        "37(6) (0.53)",
+        "40 (0.53)"
+      ]
+    },
+    {
+      "id": "Q17",
+      "jurisdiction": "Ontario",
+      "question": "I want to split my vacation into single days instead of whole weeks. Can I do that in Ontario? What about in BC?",
+      "gold": [
+        "35"
+      ],
+      "retrieved": [
+        "35.1(2) (0.63)",
+        "33(3) (0.61)",
+        "34(5) (0.61)",
+        "35 (0.61)",
+        "33(1) (0.60)"
+      ]
+    },
+    {
+      "id": "Q24",
+      "jurisdiction": "Ontario",
+      "question": "I started my job in Toronto on March 15, 2025. My manager says I have to use my vacation within 10 months of my vacation year ending. Can I save it and take it over the Christmas holidays this year (2026)?",
+      "gold": [
+        "1",
+        "35"
+      ],
+      "retrieved": [
+        "33(1) (0.69)",
+        "33(4) (0.69)",
+        "34(5) (0.69)",
+        "35 (0.63)",
+        "35.1(2) (0.62)"
+      ]
+    },
+    {
+      "id": "Q28",
+      "jurisdiction": "British Columbia",
+      "question": "Are employees in managerial positions exempt from the daily and weekly overtime requirements in British Columbia?",
+      "gold": [
+        "37",
+        "40"
+      ],
+      "retrieved": [
+        "39 (0.59)",
+        "37(7) (0.58)",
+        "37(3) (0.57)",
+        "37(10) (0.56)",
+        "35 (0.56)"
+      ]
+    },
+    {
+      "id": "Q29",
+      "jurisdiction": "Ontario",
+      "question": "My sister works in Calgary and I work in Toronto. We've both been at our jobs for 2 years. Do we get the same vacation pay?",
+      "gold": [
+        "35.2"
+      ],
+      "retrieved": [
+        "39 (0.59)",
+        "36(2) (0.59)",
+        "36(4) (0.58)",
+        "36(1) (0.57)",
+        "36(3) (0.57)"
+      ]
+    },
+    {
+      "id": "Q30",
+      "jurisdiction": "British Columbia",
+      "question": "I'm a software developer in Vancouver. Do tech workers get overtime in BC?",
+      "gold": [
+        "40"
+      ],
+      "retrieved": [
+        "35 (0.53)",
+        "1(1) *overtime wages* (0.52)",
+        "39 (0.49)",
+        "37(1) (0.48)",
+        "37(5) (0.48)"
+      ]
+    }
+  ],
+  "settings": {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "top_k": 3,
+    "max_chars": 900
+  }
+}

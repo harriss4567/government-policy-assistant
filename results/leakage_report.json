@@ -1,0 +1,71 @@
+{
+  "all_pass": true,
+  "examples_checked": {
+    "train": 80,
+    "val": 20,
+    "test_questions": 30
+  },
+  "checks": {
+    "1_all_excerpts_from_train_pool": {
+      "pass": true,
+      "violations": []
+    },
+    "2_no_test_gold_sections_in_training": {
+      "pass": true,
+      "test_gold_sections": 14,
+      "violations": []
+    },
+    "3_train_val_section_overlap": {
+      "pass": true,
+      "exact_overlap": [],
+      "base_section_overlap_info": []
+    },
+    "4_no_13gram_overlap_with_held_out_law": {
+      "pass": true,
+      "held_out_sections": 70,
+      "hits": []
+    },
+    "5_no_near_duplicate_questions": {
+      "pass": true,
+      "threshold": 0.85,
+      "flagged": [],
+      "closest_5": [
+        {
+          "cosine": 0.716,
+          "train_val": "T061",
+          "test": "Q25",
+          "train_val_q": "I started a new job in BC three weeks ago. Do I get paid for the upcoming statutory holiday?",
+          "test_q": "I started a new job in BC last week. How long do I have to work before I'm entitled to vacation pay?"
+        },
+        {
+          "cosine": 0.69,
+          "train_val": "T006",
+          "test": "Q19",
+          "train_val_q": "Does my employer in Ontario have to pay me on a regular schedule?",
+          "test_q": "Instead of getting my vacation pay all at once, can my employer in Ontario just add it to every paycheque?"
+        },
+        {
+          "cosine": 0.689,
+          "train_val": "T008",
+          "test": "Q23",
+          "train_val_q": "Is my employer in Ontario allowed to take money off my paycheque?",
+          "test_q": "I work in Ontario and would rather take time off than get overtime pay. Can my employer let me do that?"
+        },
+        {
+          "cosine": 0.685,
+          "train_val": "T061",
+          "test": "Q06",
+          "train_val_q": "I started a new job in BC three weeks ago. Do I get paid for the upcoming statutory holiday?",
+          "test_q": "I just finished my first year working in BC. Am I supposed to get two weeks off now?"
+        },
+        {
+          "cosine": 0.67,
+          "train_val": "T019",
+          "test": "Q03",
+          "train_val_q": "If I agree to work on a public holiday in Ontario, what am I paid?",
+          "test_q": "I work in Ontario and have only been here for two years. How much vacation pay am I owed?"
+        }
+      ]
+    }
+  }
+}
