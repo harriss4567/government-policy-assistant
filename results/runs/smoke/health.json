@@ -1,0 +1,134 @@
+{
+  "A": {
+    "experiment": {
+      "model": "qwen",
+      "adapter": false,
+      "rag": false
+    },
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "questions": 3,
+    "crashed": 0,
+    "province_answers": 4,
+    "valid_json": 4,
+    "retries": 4,
+    "status": {
+      "answered": 4,
+      "abstained": 0,
+      "failed": 0
+    },
+    "quote_verified": 0,
+    "avg_seconds_per_question": 16.5,
+    "avg_tokens_per_question": 905,
+    "wall_minutes": 0.9
+  },
+  "B": {
+    "experiment": {
+      "model": "qwen",
+      "adapter": false,
+      "rag": true
+    },
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "questions": 3,
+    "crashed": 0,
+    "province_answers": 4,
+    "valid_json": 4,
+    "retries": 1,
+    "status": {
+      "answered": 4,
+      "abstained": 0,
+      "failed": 0
+    },
+    "quote_verified": 0,
+    "avg_seconds_per_question": 13.9,
+    "avg_tokens_per_question": 1655,
+    "wall_minutes": 0.7
+  },
+  "C": {
+    "experiment": {
+      "model": "qwen",
+      "adapter": true,
+      "rag": false
+    },
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "questions": 3,
+    "crashed": 0,
+    "province_answers": 4,
+    "valid_json": 3,
+    "retries": 1,
+    "status": {
+      "answered": 3,
+      "abstained": 0,
+      "failed": 1
+    },
+    "quote_verified": 0,
+    "avg_seconds_per_question": 13.3,
+    "avg_tokens_per_question": 538,
+    "wall_minutes": 0.7
+  },
+  "D": {
+    "experiment": {
+      "model": "qwen",
+      "adapter": true,
+      "rag": true
+    },
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "questions": 3,
+    "crashed": 0,
+    "province_answers": 4,
+    "valid_json": 4,
+    "retries": 0,
+    "status": {
+      "answered": 4,
+      "abstained": 0,
+      "failed": 0
+    },
+    "quote_verified": 4,
+    "avg_seconds_per_question": 15.2,
+    "avg_tokens_per_question": 1461,
+    "wall_minutes": 0.8
+  },
+  "E": {
+    "experiment": {
+      "model": "smollm2",
+      "adapter": false,
+      "rag": true
+    },
+    "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "questions": 3,
+    "crashed": 0,
+    "province_answers": 4,
+    "valid_json": 4,
+    "retries": 0,
+    "status": {
+      "answered": 4,
+      "abstained": 0,
+      "failed": 0
+    },
+    "quote_verified": 3,
+    "avg_seconds_per_question": 16.9,
+    "avg_tokens_per_question": 1509,
+    "wall_minutes": 1.0
+  },
+  "F": {
+    "experiment": {
+      "model": "smollm2",
+      "adapter": false,
+      "rag": false
+    },
+    "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "questions": 3,
+    "crashed": 0,
+    "province_answers": 4,
+    "valid_json": 3,
+    "retries": 1,
+    "status": {
+      "answered": 3,
+      "abstained": 0,
+      "failed": 1
+    },
+    "quote_verified": 0,
+    "avg_seconds_per_question": 25.1,
+    "avg_tokens_per_question": 820,
+    "wall_minutes": 1.3
+  }
+}

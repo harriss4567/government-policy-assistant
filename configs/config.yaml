@@ -11,6 +11,28 @@ retrieval:
   eval_k: [1, 3, 5]       # k values reported in Recall@k
   abstain_threshold: null # Step 2.5: tested, no cut-off separates abstain questions (results/abstain_threshold.json)
 
+models:
+  qwen: {id: Qwen/Qwen2.5-1.5B-Instruct, adapter: models/lora-adapter}   # main model + its LoRA adapter
+  smollm2: {id: HuggingFaceTB/SmolLM2-1.7B-Instruct, adapter: null}     # comparison model (not fine-tuned)
+
+generation:
+  max_new_tokens: 400     # long enough for the full JSON answer
+  retries: 1              # re-ask once if the answer isn't valid JSON with the 9 keys
+
+pipeline:
+  relevance_check: true   # ask the base model "do these excerpts answer the question?" (see results/relevance_check.json)
+  relevance_model: qwen   # judge = base Qwen (adapter off) for every experiment, so the check is identical across A–F
+  relevance_min_p_yes: 0.5   # abstain if P(YES) < 0.5 (plain YES/NO); chosen on train/val data: catches 5/8, wrongly rejects 4/92
+  quote_fuzzy_min: 0.9    # a quote counts as found if >= 90% similar to some passage (ignoring case and spacing)
+
+experiments:              # model × fine-tuned (adapter) × RAG
+  A: {model: qwen, adapter: false, rag: false}
+  B: {model: qwen, adapter: false, rag: true}
+  C: {model: qwen, adapter: true, rag: false}
+  D: {model: qwen, adapter: true, rag: true}
+  E: {model: smollm2, adapter: false, rag: true}
+  F: {model: smollm2, adapter: false, rag: false}   # optional
+
 paths:
   kb_sections: data/processed/kb_sections.jsonl
   kb_chunks: data/processed/kb_chunks.jsonl

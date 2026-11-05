@@ -1,0 +1,779 @@
+{
+  "summary": {
+    "valid_json": {
+      "base": 20,
+      "fine_tuned": 20
+    },
+    "exact_keys": {
+      "base": 12,
+      "fine_tuned": 20
+    },
+    "section_match": {
+      "base": 1,
+      "fine_tuned": 18
+    },
+    "mandatory_match": {
+      "base": 16,
+      "fine_tuned": 14
+    },
+    "quote_ok": {
+      "base": 3,
+      "fine_tuned": 17
+    },
+    "not_specified_ok": {
+      "base": 18,
+      "fine_tuned": 18
+    }
+  },
+  "n": 20,
+  "examples": [
+    {
+      "id": "V001",
+      "type": "requirement",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 8.5(1)\",\n  \"eligibility\": \"Every employer\",\n  \"entitlement_or_requirement\": \"to disclose whether the posting is for an existing vacancy or not\",\n  \"threshold\": \"not specified\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"Every employer who advertises a publicly advertised job posting shall include in the posting, \"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"job_postings\", \"section\": \"8.5(1)\", \"eligibility\": \"Employer advertises a publicly advertised job posting\", \"entitlement_or_requirement\": \"The posting includes a statement about whether the posting is for an existing vacancy\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"shall include in the posting\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "job_postings",
+        "section": "8.5(1)",
+        "eligibility": "Employer advertises a publicly advertised job posting",
+        "entitlement_or_requirement": "The posting must include a statement disclosing whether it is for an existing vacancy, and any other prescribed information",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "a statement disclosing whether the posting is for an existing vacancy or not"
+      }
+    },
+    {
+      "id": "V002",
+      "type": "rule",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"Employment Standards Act, 2000 (Ontario)\",\n  \"eligibility\": \"Employee\",\n  \"entitlement_or_requirement\": \"Lay-off period\",\n  \"threshold\": \"No part of the lay-off period after the deemed termination date\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"termination_and_severance\", \"section\": \"59(2)\", \"eligibility\": \"Employment was terminated as a result of a lay-off\", \"entitlement_or_requirement\": \"The lay-off period after the deemed termination date is excluded from the period of employment\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"no part of the lay-off period after the deemed termination date shall be included in determining his or her period of employment\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "termination_and_severance",
+        "section": "59(2)",
+        "eligibility": "Employment was terminated as a result of a lay-off",
+        "entitlement_or_requirement": "No part of the lay-off period after the deemed termination date is included in determining the period of employment",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "no part of the lay-off period after the deemed termination date shall be included in determining his or her period of employment"
+      }
+    },
+    {
+      "id": "V003",
+      "type": "threshold, eligibility",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 49.6(2)\",\n  \"eligibility\": \"An employee who has been employed by an employer for at least six consecutive months\",\n  \"entitlement_or_requirement\": \"leave of absence without pay of up to 104 weeks\",\n  \"threshold\": \"if a child of the employee disappears and it is probable, considering the circumstances, that the child disappeared as a result of a crime\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"leaves_of_absence\", \"section\": \"49.6(2)\", \"eligibility\": \"Employed for at least six consecutive months\", \"entitlement_or_requirement\": \"Leave of absence without pay of up to 104 weeks\", \"threshold\": \"Up to 104 weeks\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"is entitled to a leave of absence without pay of up to 104 weeks\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "leaves_of_absence",
+        "section": "49.6(2)",
+        "eligibility": "Employee employed for at least six consecutive months; a child of the employee disappears and it is probable the disappearance resulted from a crime",
+        "entitlement_or_requirement": "Leave of absence without pay",
+        "threshold": "Up to 104 weeks; at least six consecutive months of employment",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "is entitled to a leave of absence without pay of up to 104 weeks if a child of the employee disappears"
+      }
+    },
+    {
+      "id": "V004",
+      "type": "threshold, eligibility",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Pregnancy Leave\",\n  \"section\": \"Employment Standards Act, 2000 (Ontario)\",\n  \"eligibility\": \"Employee's pregnancy leave\",\n  \"entitlement_or_requirement\": \"Ends upon entitlement to parental leave or 12 weeks after birth/miscarriage, whichever occurs first\",\n  \"threshold\": \"17 weeks after pregnancy leave begins\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"leaves_of_absence\", \"section\": \"47(1)\", \"eligibility\": \"Employee is entitled to parental leave or not\", \"entitlement_or_requirement\": \"Pregnancy leave ends when either 17 weeks have passed since the start of the pregnancy leave, or 12 weeks after the birth, still-birth or miscarriage\", \"threshold\": \"17 weeks after the pregnancy leave started, or 12 weeks after the birth, still-birth or miscarriage\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"(a) if she is entitled to parental leave\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "leaves_of_absence",
+        "section": "47(1)",
+        "eligibility": "Employee is entitled to parental leave",
+        "entitlement_or_requirement": "Pregnancy leave ends 17 weeks after it began",
+        "threshold": "17 weeks after the pregnancy leave began",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "if she is entitled to parental leave, 17 weeks after the pregnancy leave began"
+      }
+    },
+    {
+      "id": "V005",
+      "type": "exception",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 52(1)\",\n  \"eligibility\": \"any employee\",\n  \"entitlement_or_requirement\": \"time on leave\",\n  \"threshold\": \"not specified\",\n  \"exceptions\": [\"s. 52(2)\", \"probation\"],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"leaves_of_absence\", \"section\": \"52(1), 52(2)\", \"eligibility\": \"Leave under this Part\", \"entitlement_or_requirement\": \"The period of leave is included in calculating the length of employment, service, and seniority\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [\"The period of leave is not included in determining whether the employee has completed a probationary period\"], \"mandatory\": \"mandatory\", \"supporting_quote\": \"the period of an employee’s leave under this Part\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "leaves_of_absence",
+        "section": "52(1), 52(2)",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "The leave period counts toward length of employment, length of service and seniority under the employment contract",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [
+          "The leave period does not count toward completing a probationary period (s. 52(2))"
+        ],
+        "mandatory": "mandatory",
+        "supporting_quote": "The period of an employee’s leave shall not be included in determining whether he or she has completed a probationary period under an employment contract."
+      }
+    },
+    {
+      "id": "V006",
+      "type": "threshold",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 66.1(1)\",\n  \"eligibility\": \"An employer and an employee may agree\",\n  \"entitlement_or_requirement\": \"to a lay-off that is 35 or more weeks in any period of 52 consecutive weeks\",\n  \"threshold\": \"but may not agree to a lay-off of 52 or more weeks in any period of 78 consecutive weeks\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"leaves_of_absence\", \"section\": \"66.1(1)\", \"eligibility\": \"Employer and employee agree on a lay-off lasting at least 35 weeks in any 52-week period, but not more than 52 weeks in any 78-week period\", \"entitlement_or_requirement\": \"The lay-off cannot exceed 52 weeks in any 78-week period\", \"threshold\": \"At least 35 weeks in any 52-week period, but not more than 52 weeks in any 78-week period\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"but may not agree to a lay-off of 52 or more weeks in any period of 78 consecutive weeks\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "termination_and_severance",
+        "section": "66.1(1)",
+        "eligibility": "Employer and employee agree to the lay-off",
+        "entitlement_or_requirement": "May agree to a lay-off of 35 or more weeks in any 52 consecutive weeks, but not 52 or more weeks in any 78 consecutive weeks",
+        "threshold": "35 or more weeks in 52 is allowed by agreement; 52 or more weeks in 78 is not",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "may not agree to a lay-off of 52 or more weeks in any period of 78 consecutive weeks"
+      }
+    },
+    {
+      "id": "V007",
+      "type": "list, exception",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 72(2)\",\n  \"eligibility\": \"retail business establishments\",\n  \"entitlement_or_requirement\": \"right to refuse work on public holidays\",\n  \"threshold\": \"not specified\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": false,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"public_holidays\", \"section\": \"72(2)\", \"eligibility\": \"Retail business establishment where the primary retail business is one of the listed activities\", \"entitlement_or_requirement\": \"The right to refuse work on public holidays\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [\"Does not apply to retail businesses primarily engaged in selling prepared meals, renting living accommodations, being open for educational, recreational or amusement purposes, or selling goods or services incidental to those activities\"], \"mandatory\": \"optional\", \"supporting_quote\": \"This Part does not apply with respect to retail business establishments in which the primary retail business is one that\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": false,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "retail_business_establishments",
+        "section": "72(2)",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "The retail Part does not apply to establishments whose primary retail business sells prepared meals, rents living accommodations, is open for educational, recreational or amusement purposes, or sells incidental goods or services in the same premises",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "Not specified in the excerpt",
+        "supporting_quote": "This Part does not apply with respect to retail business establishments in which the primary retail business is one that,"
+      }
+    },
+    {
+      "id": "V008",
+      "type": "exception",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 14.3(1)\",\n  \"eligibility\": \"Yes\",\n  \"entitlement_or_requirement\": \"may withhold or make a deduction\",\n  \"threshold\": \"if a statute of Ontario or Canada or a court order authorizes it\",\n  \"exceptions\": [\n    \"(2)\"\n  ],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": false,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"tips_and_gratuities\", \"section\": \"14.3(1), 14.3(2)\", \"eligibility\": \"Not specified in the excerpt\", \"entitlement_or_requirement\": \"Employer may withhold or deduct tips or other gratuities under Ontario or Canadian statutes or court orders that authorize it\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [\"Subsection (1) does not apply if the statute or order requires the employer to remit the withheld, deducted, returned or given tips or other gratuities to a third person and the employer fails to do so\"], \"mandatory\": \"mandatory\", \"supporting_quote\": \"An employer may withhold or make a deduction from an employee’s tips or other gratuities or cause the employee to return or give them to the employer\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": false,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "tips_and_gratuities",
+        "section": "14.3(1), 14.3(2)",
+        "eligibility": "A statute of Ontario or Canada or a court order authorizes it",
+        "entitlement_or_requirement": "Employer may withhold or deduct from tips or other gratuities",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [
+          "Does not apply if the statute or order requires remitting the amount to a third person and the employer fails to do so (s. 14.3(2))"
+        ],
+        "mandatory": "optional",
+        "supporting_quote": "if a statute of Ontario or Canada or a court order authorizes it"
+      }
+    },
+    {
+      "id": "V009",
+      "type": "missing",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 49.3(2)\",\n  \"eligibility\": \"An employee\",\n  \"entitlement_or_requirement\": \"leave of absence without pay\",\n  \"threshold\": \"a qualified health practitioner issues a certificate stating that the individual has a serious medical condition\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"leaves_of_absence\", \"section\": \"49.3(2)\", \"eligibility\": \"A qualified health practitioner certifies that the individual has a serious medical condition\", \"entitlement_or_requirement\": \"Leave of absence without pay to provide care or support\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"if a qualified health practitioner issues a certificate stating that the individual has a serious medical condition\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "leaves_of_absence",
+        "section": "49.3(2)",
+        "eligibility": "A qualified health practitioner issues a certificate stating that the individual has a serious medical condition",
+        "entitlement_or_requirement": "Leave of absence without pay to provide care or support to an individual described in subsection (5)",
+        "threshold": "Not specified in the excerpt (the number of weeks is not stated)",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "An employee is entitled to a leave of absence without pay to provide care or support to an individual described in subsection (5)"
+      }
+    },
+    {
+      "id": "V010",
+      "type": "missing",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 67.2(5)\",\n  \"eligibility\": \"any person\",\n  \"entitlement_or_requirement\": \"not specified\",\n  \"threshold\": \"Not applicable\",\n  \"exceptions\": [],\n  \"mandatory\": \"Not specified in the excerpt\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": false
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"non_compete_agreements\", \"section\": \"67.2(5)\", \"eligibility\": \"Not specified in the excerpt\", \"entitlement_or_requirement\": \"Not specified in the excerpt\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"Not specified in the excerpt\", \"supporting_quote\": \"\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": false
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "non_compete_agreements",
+        "section": "Not specified in the excerpt",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "Not specified in the excerpt",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "Not specified in the excerpt",
+        "supporting_quote": ""
+      }
+    },
+    {
+      "id": "V011",
+      "type": "threshold, eligibility",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"Ontario\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 63(2.1)\",\n  \"eligibility\": \"An employee with a regular work week\",\n  \"entitlement_or_requirement\": \"Laid off for a week\",\n  \"threshold\": \"less than one-quarter the regular rate\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": false,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"leaves_of_absence\", \"section\": \"63(2.1)\", \"eligibility\": \"Employee has a regular work week\", \"entitlement_or_requirement\": \"The employee earns less than one-quarter their regular weekly wage in that week\", \"threshold\": \"Less than one-quarter the regular weekly wage\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"(a) in that week, the employee earns less than one-quarter the amount he or she would earn at his or her regular rate in a regular work week\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": false,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "termination_and_severance",
+        "section": "63(2.1)",
+        "eligibility": "Employee has a regular work week, and the week is not an excluded week",
+        "entitlement_or_requirement": "Laid off for a week if the employee earns less than one-quarter of what they would earn at their regular rate in a regular work week",
+        "threshold": "Less than one-quarter of regular weekly earnings",
+        "exceptions": [],
+        "mandatory": "Not specified in the excerpt",
+        "supporting_quote": "the employee earns less than one-quarter the amount he or she would earn at his or her regular rate in a regular work week"
+      }
+    },
+    {
+      "id": "V012",
+      "type": "list",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"22(1)\",\n  \"eligibility\": \"any employee\",\n  \"entitlement_or_requirement\": \"wage assignments\",\n  \"threshold\": \"written assignment\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"wages\", \"section\": \"22(1)\", \"eligibility\": \"Written assignment of wages by the employee\", \"entitlement_or_requirement\": \"Employer must honour the assignment according to the applicable code or law\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [\"The assignment is not honoured if the amounts are not deductible for income tax purposes under the Income Tax Act (Canada)\"], \"mandatory\": \"mandatory\", \"supporting_quote\": \"An employer must honour an employee's written assignment of wages\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "wages",
+        "section": "22(1)",
+        "eligibility": "The employee makes a written assignment of wages",
+        "entitlement_or_requirement": "Employer must honour written assignments to a trade union, to tax-deductible charitable organizations or pension plans, to a person under a maintenance order, and to an insurer for insurance or medical or dental coverage",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "An employer must honour an employee's written assignment of wages"
+      }
+    },
+    {
+      "id": "V013",
+      "type": "exception",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"Employment Standards Act (British Columbia)\",\n  \"eligibility\": \"Farm labour contractors and producers\",\n  \"entitlement_or_requirement\": \"Liability for unpaid wages\",\n  \"threshold\": \"Producers paying farm labour contractors\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"wages_and_salaries\", \"section\": \"30(1), 30(2)\", \"eligibility\": \"A producer and a farm labour contractor are jointly and separately liable for wages earned by an employee of the farm labour contractor for work done on behalf of the producer\", \"entitlement_or_requirement\": \"The producer and the farm labour contractor are jointly and separately liable for the wages earned by the farm labour contractor's employees for work done on behalf of the producer\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [\"Does not apply if the farm labour contractor is licensed under the Act and the producer has satisfied the director that the producer paid the farm labour contractor for the wages earned by each employee\"], \"mandatory\": \"mandatory\", \"supporting_quote\": \"a producer and a farm labour contractor are jointly and separately liable for wages earned by an employee of the farm labour contractor for work done on behalf of the producer\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "wages",
+        "section": "30(1), 30(2)",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "The producer and the farm labour contractor are jointly and separately liable for wages earned by the contractor's employee for work done for the producer",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [
+          "Not the producer, if the contractor was licensed when engaged and the producer shows it paid the contractor for the employees' wages (s. 30(2))"
+        ],
+        "mandatory": "mandatory",
+        "supporting_quote": "A producer and a farm labour contractor are jointly and separately liable for wages"
+      }
+    },
+    {
+      "id": "V014",
+      "type": "rule",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"jury service and employment standards\",\n  \"section\": \"Employment Standards Act (British Columbia), s. 55\",\n  \"eligibility\": \"Yes\",\n  \"entitlement_or_requirement\": \"entitled to\",\n  \"threshold\": \"not specified\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"jury_duty\", \"section\": \"55\", \"eligibility\": \"Employee is required to attend court as a juror\", \"entitlement_or_requirement\": \"Employer has the same duties under section 54 (2) to (4) as if the employee were on leave under this Part\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"the employer has the same duties under section 54 (2) to (4) in relation to the employee as if that employee were on leave under this Part\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "leaves",
+        "section": "55",
+        "eligibility": "Employee is required to attend court as a juror",
+        "entitlement_or_requirement": "The employer has the same duties under section 54 (2) to (4) as if the employee were on leave",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "the employer has the same duties under section 54 (2) to (4) in relation to the employee as if that employee were on leave under this Part"
+      }
+    },
+    {
+      "id": "V015",
+      "type": "eligibility",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"Employment Standards Act (British Columbia)\",\n  \"eligibility\": \"employee\",\n  \"entitlement_or_requirement\": \"continuing payment to a pension, medical or other plan beneficial to an employee\",\n  \"threshold\": \"(a) if the employer pays the total cost of the plan; (b) if both the employer and the employee pay the cost of the plan and the employee chooses to continue to pay the employee's share of the cost.\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"leaves_of_absence\", \"section\": \"56(2)\", \"eligibility\": \"Employer pays the total cost of the plan or both the employer and the employee pay the cost and the employee chooses to continue to pay their share\", \"entitlement_or_requirement\": \"The employer must continue making payments to the pension, medical or other plan as though the employee were not on leave or attending court as a juror\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [\"If the employer pays the total cost\"], \"mandatory\": \"mandatory\", \"supporting_quote\": \"(a) if the employer pays the total cost\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "leaves",
+        "section": "56(2)",
+        "eligibility": "The employer pays the total cost of the plan, or the employer and employee share the cost and the employee chooses to keep paying their share",
+        "entitlement_or_requirement": "Employer must continue payments to a pension, medical or other plan as though the employee were not on leave",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "the employer must continue to make payments to a pension, medical or other plan beneficial to an employee as though the employee were not on leave"
+      }
+    },
+    {
+      "id": "V016",
+      "type": "requirement",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards and retirement savings\",\n  \"section\": \"Employment contract provisions regarding contributions to retirement savings plans\",\n  \"eligibility\": \"Employee agreement to contribute to an RRSP\",\n  \"entitlement_or_requirement\": \"Mandatory payment according to the contract\",\n  \"threshold\": \"Not specified in the excerpt\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"An employer who agrees under an employment contract to pay an amount on behalf of an employee to a fund, insurer or other person must pay the amount in accordance with the contract.\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"pension_and_retirement_savings\", \"section\": \"26\", \"eligibility\": \"Employer agrees to pay on behalf of the employee to a fund, insurer or other person\", \"entitlement_or_requirement\": \"The employer must pay the amount according to the terms of the agreement\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"must pay the amount in accordance with the contract\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "wages",
+        "section": "26",
+        "eligibility": "Employer agrees under an employment contract to pay an amount on the employee's behalf to a fund, insurer or other person",
+        "entitlement_or_requirement": "The employer must pay the amount in accordance with the contract",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "must pay the amount in accordance with the contract"
+      }
+    },
+    {
+      "id": "V017",
+      "type": "rule",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 68(2)\",\n  \"eligibility\": \"Yes\",\n  \"entitlement_or_requirement\": \"termination pay requirements\",\n  \"threshold\": \"whether or not the employee has obtained other employment or has in any other way realized or recovered any money for the notice period\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"termination_pay\", \"section\": \"68(2)\", \"eligibility\": \"Employee has obtained other employment or has realized or recovered money for the notice period\", \"entitlement_or_requirement\": \"Termination pay requirements of section 64 apply regardless of obtaining other employment or recovering money\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"optional\", \"supporting_quote\": \"the termination pay requirements of section 64 apply whether or not the employee has obtained other employment\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": false,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "termination",
+        "section": "68(2)",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "The termination pay requirements of section 64 apply whether or not the employee has found other employment or recovered money for the notice period",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "apply whether or not the employee has obtained other employment"
+      }
+    },
+    {
+      "id": "V018",
+      "type": "threshold, eligibility",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"s. 52.3(2)\",\n  \"eligibility\": \"If a child of an employee disappears and it is probable that the child's disappearance is a result of a crime\",\n  \"entitlement_or_requirement\": \"unpaid leave for a period of up to 52 weeks\",\n  \"threshold\": \"up to 52 weeks\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": false,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"leaves_of_absence\", \"section\": \"52.3(2)\", \"eligibility\": \"Child of an employee disappears and it is probable that the disappearance is a result of a crime\", \"entitlement_or_requirement\": \"Unpaid leave for a period of up to 52 weeks\", \"threshold\": \"Up to 52 weeks\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"the employee is entitled to unpaid leave for a period of up to 52 weeks\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": true,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "leaves",
+        "section": "52.3(2)",
+        "eligibility": "A child of the employee disappears, it is probable the disappearance is the result of a crime, and the employee requests leave",
+        "entitlement_or_requirement": "Unpaid leave",
+        "threshold": "Up to 52 weeks",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "the employee is entitled to unpaid leave for a period of up to 52 weeks"
+      }
+    },
+    {
+      "id": "V019",
+      "type": "missing",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Employment standards\",\n  \"section\": \"Notice period for termination\",\n  \"eligibility\": \"Any employee\",\n  \"entitlement_or_requirement\": \"Mandatory\",\n  \"threshold\": \"Once notice is given\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"(2)(a) or (b)\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": false,
+          "quote_ok": false,
+          "not_specified_ok": false
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"termination_and_severance\", \"section\": \"67(2)\", \"eligibility\": \"Written notice is given under Part 3 of the Act\", \"entitlement_or_requirement\": \"The employee's wage rate and any other conditions of employment cannot be changed without their written consent\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"the employee's wage rate, or any other condition of employment\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": false,
+          "quote_ok": true,
+          "not_specified_ok": false
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "termination",
+        "section": "Not specified in the excerpt",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "Not specified in the excerpt",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "Not specified in the excerpt",
+        "supporting_quote": ""
+      }
+    },
+    {
+      "id": "V020",
+      "type": "missing",
+      "base": {
+        "output": "{\n  \"jurisdiction\": \"British Columbia\",\n  \"topic\": \"Minimum Wage\",\n  \"section\": \"Employment Standards Act (British Columbia)\",\n  \"eligibility\": \"Liquor Servers\",\n  \"entitlement_or_requirement\": \"Entitlement\",\n  \"threshold\": \"Not specified in the excerpt\",\n  \"exceptions\": [],\n  \"mandatory\": \"mandatory\",\n  \"supporting_quote\": \"\"\n}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": false,
+          "mandatory_match": true,
+          "quote_ok": false,
+          "not_specified_ok": true
+        }
+      },
+      "fine_tuned": {
+        "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"minimum_wage\", \"section\": \"16.1(2)\", \"eligibility\": \"Not specified in the excerpt\", \"entitlement_or_requirement\": \"The minimum wage for a prescribed class of employees is the amount specified in, or calculated in accordance with, the regulations\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"optional\", \"supporting_quote\": \"the minimum wage for a prescribed class of employees is the amount specified in, or calculated in accordance with, the regulations\"}",
+        "checks": {
+          "valid_json": true,
+          "exact_keys": true,
+          "section_match": true,
+          "mandatory_match": false,
+          "quote_ok": true,
+          "not_specified_ok": true
+        }
+      },
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "wages",
+        "section": "16.1(2)",
+        "eligibility": "Employee belongs to a prescribed class of employees",
+        "entitlement_or_requirement": "The minimum wage for the class is the amount specified in, or calculated under, the regulations",
+        "threshold": "Not specified in the excerpt (the amount is set by regulation)",
+        "exceptions": [
+          "Subject to section 16.2, which is not included in the excerpt"
+        ],
+        "mandatory": "mandatory",
+        "supporting_quote": "the minimum wage for a prescribed class of employees is the amount specified in, or calculated in accordance with, the regulations"
+      }
+    }
+  ]
+}

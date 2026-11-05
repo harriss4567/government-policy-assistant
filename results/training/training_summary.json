@@ -1,0 +1,42 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "gpu": "Tesla T4",
+  "gpu_memory_gb": 15.6,
+  "quick_test": false,
+  "train_examples": 80,
+  "val_examples": 20,
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": "all-linear",
+    "task_type": "CAUSAL_LM"
+  },
+  "hyperparameters": {
+    "num_train_epochs": 3,
+    "learning_rate": 0.0002,
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "lr_scheduler_type": "cosine",
+    "warmup_steps": 3,
+    "max_length": 1024
+  },
+  "precision": "fp16",
+  "seed": 42,
+  "trainable_params": 18464768,
+  "total_params": 1562179072,
+  "steps": 30,
+  "train_minutes": 2.2,
+  "peak_gpu_memory_gb": 4.21,
+  "first_train_loss": 0.6961735486984253,
+  "last_train_loss": 0.17658449709415436,
+  "first_eval_loss": 0.35600772500038147,
+  "best_eval_loss": 0.23542813956737518,
+  "best_checkpoint": "lora_results/checkpoints/checkpoint-30",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.22.1",
+    "peft": "0.21.2",
+    "trl": "1.17.1"
+  }
+}

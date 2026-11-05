@@ -1,0 +1,94 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapter": "models/lora-adapter",
+  "device": "mps",
+  "dtype": "float16",
+  "load_seconds": 8.5,
+  "peak_memory_gb": 3.44,
+  "decoding": "greedy, max_new_tokens=400",
+  "results": [
+    {
+      "id": "V003",
+      "prompt_tokens": 295,
+      "output_tokens": 112,
+      "seconds": 8.1,
+      "tokens_per_second": 13.8,
+      "checks": {
+        "valid_json": true,
+        "exact_keys": true,
+        "section_match": true,
+        "mandatory_match": true,
+        "quote_word_for_word": true,
+        "says_not_specified_when_expected": true
+      },
+      "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"leaves_of_absence\", \"section\": \"49.6(2)\", \"eligibility\": \"Employed for at least six consecutive months\", \"entitlement_or_requirement\": \"Leave of absence without pay of up to 104 weeks\", \"threshold\": \"Up to 104 weeks\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"is entitled to a leave of absence without pay of up to 104 weeks\"}",
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "leaves_of_absence",
+        "section": "49.6(2)",
+        "eligibility": "Employee employed for at least six consecutive months; a child of the employee disappears and it is probable the disappearance resulted from a crime",
+        "entitlement_or_requirement": "Leave of absence without pay",
+        "threshold": "Up to 104 weeks; at least six consecutive months of employment",
+        "exceptions": [],
+        "mandatory": "mandatory",
+        "supporting_quote": "is entitled to a leave of absence without pay of up to 104 weeks if a child of the employee disappears"
+      }
+    },
+    {
+      "id": "V008",
+      "prompt_tokens": 352,
+      "output_tokens": 167,
+      "seconds": 11.2,
+      "tokens_per_second": 14.9,
+      "checks": {
+        "valid_json": true,
+        "exact_keys": true,
+        "section_match": true,
+        "mandatory_match": false,
+        "quote_word_for_word": true,
+        "says_not_specified_when_expected": true
+      },
+      "output": "{\"jurisdiction\": \"Ontario\", \"topic\": \"tips_and_gratuities\", \"section\": \"14.3(1), 14.3(2)\", \"eligibility\": \"Not specified in the excerpt\", \"entitlement_or_requirement\": \"Employer may withhold or deduct tips or other gratuities under Ontario or Canadian statutes or court orders that authorize it\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [\"Subsection (1) does not apply if the statute or order requires the employer to remit the withheld, deducted, returned or given tips or other gratuities to a third person and the employer fails to do so\"], \"mandatory\": \"mandatory\", \"supporting_quote\": \"if a statute of Ontario or Canada or a court order authorizes it\"}",
+      "expected": {
+        "jurisdiction": "Ontario",
+        "topic": "tips_and_gratuities",
+        "section": "14.3(1), 14.3(2)",
+        "eligibility": "A statute of Ontario or Canada or a court order authorizes it",
+        "entitlement_or_requirement": "Employer may withhold or deduct from tips or other gratuities",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [
+          "Does not apply if the statute or order requires remitting the amount to a third person and the employer fails to do so (s. 14.3(2))"
+        ],
+        "mandatory": "optional",
+        "supporting_quote": "if a statute of Ontario or Canada or a court order authorizes it"
+      }
+    },
+    {
+      "id": "V019",
+      "prompt_tokens": 272,
+      "output_tokens": 111,
+      "seconds": 7.6,
+      "tokens_per_second": 14.6,
+      "checks": {
+        "valid_json": true,
+        "exact_keys": true,
+        "section_match": false,
+        "mandatory_match": false,
+        "quote_word_for_word": true,
+        "says_not_specified_when_expected": false
+      },
+      "output": "{\"jurisdiction\": \"British Columbia\", \"topic\": \"termination_and_severance\", \"section\": \"67(2)\", \"eligibility\": \"Written notice is given under Part 3 of the Act\", \"entitlement_or_requirement\": \"The employee's wage rate and any other conditions of employment cannot be changed without their written consent\", \"threshold\": \"Not specified in the excerpt\", \"exceptions\": [], \"mandatory\": \"mandatory\", \"supporting_quote\": \"the employee's wage rate, or any other condition of employment\"}",
+      "expected": {
+        "jurisdiction": "British Columbia",
+        "topic": "termination",
+        "section": "Not specified in the excerpt",
+        "eligibility": "Not specified in the excerpt",
+        "entitlement_or_requirement": "Not specified in the excerpt",
+        "threshold": "Not specified in the excerpt",
+        "exceptions": [],
+        "mandatory": "Not specified in the excerpt",
+        "supporting_quote": ""
+      }
+    }
+  ]
+}
