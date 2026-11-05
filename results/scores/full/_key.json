@@ -1,0 +1,722 @@
+{
+ "S001": {
+  "experiment": "D",
+  "qid": "Q15"
+ },
+ "S002": {
+  "experiment": "A",
+  "qid": "Q22"
+ },
+ "S003": {
+  "experiment": "B",
+  "qid": "Q18"
+ },
+ "S004": {
+  "experiment": "D",
+  "qid": "Q17"
+ },
+ "S005": {
+  "experiment": "E",
+  "qid": "Q24"
+ },
+ "S006": {
+  "experiment": "E",
+  "qid": "Q03"
+ },
+ "S007": {
+  "experiment": "F",
+  "qid": "Q29"
+ },
+ "S008": {
+  "experiment": "E",
+  "qid": "Q04"
+ },
+ "S009": {
+  "experiment": "F",
+  "qid": "Q24"
+ },
+ "S010": {
+  "experiment": "F",
+  "qid": "Q02"
+ },
+ "S011": {
+  "experiment": "C",
+  "qid": "Q09"
+ },
+ "S012": {
+  "experiment": "A",
+  "qid": "Q11"
+ },
+ "S013": {
+  "experiment": "A",
+  "qid": "Q06"
+ },
+ "S014": {
+  "experiment": "B",
+  "qid": "Q12"
+ },
+ "S015": {
+  "experiment": "E",
+  "qid": "Q22"
+ },
+ "S016": {
+  "experiment": "D",
+  "qid": "Q06"
+ },
+ "S017": {
+  "experiment": "A",
+  "qid": "Q09"
+ },
+ "S018": {
+  "experiment": "A",
+  "qid": "Q25"
+ },
+ "S019": {
+  "experiment": "E",
+  "qid": "Q01"
+ },
+ "S020": {
+  "experiment": "F",
+  "qid": "Q20"
+ },
+ "S021": {
+  "experiment": "A",
+  "qid": "Q08"
+ },
+ "S022": {
+  "experiment": "E",
+  "qid": "Q02"
+ },
+ "S023": {
+  "experiment": "E",
+  "qid": "Q30"
+ },
+ "S024": {
+  "experiment": "F",
+  "qid": "Q18"
+ },
+ "S025": {
+  "experiment": "B",
+  "qid": "Q09"
+ },
+ "S026": {
+  "experiment": "B",
+  "qid": "Q30"
+ },
+ "S027": {
+  "experiment": "A",
+  "qid": "Q15"
+ },
+ "S028": {
+  "experiment": "B",
+  "qid": "Q11"
+ },
+ "S029": {
+  "experiment": "D",
+  "qid": "Q24"
+ },
+ "S030": {
+  "experiment": "F",
+  "qid": "Q13"
+ },
+ "S031": {
+  "experiment": "E",
+  "qid": "Q13"
+ },
+ "S032": {
+  "experiment": "B",
+  "qid": "Q14"
+ },
+ "S033": {
+  "experiment": "A",
+  "qid": "Q10"
+ },
+ "S034": {
+  "experiment": "F",
+  "qid": "Q25"
+ },
+ "S035": {
+  "experiment": "A",
+  "qid": "Q13"
+ },
+ "S036": {
+  "experiment": "E",
+  "qid": "Q25"
+ },
+ "S037": {
+  "experiment": "E",
+  "qid": "Q11"
+ },
+ "S038": {
+  "experiment": "D",
+  "qid": "Q10"
+ },
+ "S039": {
+  "experiment": "A",
+  "qid": "Q18"
+ },
+ "S040": {
+  "experiment": "C",
+  "qid": "Q24"
+ },
+ "S041": {
+  "experiment": "F",
+  "qid": "Q30"
+ },
+ "S042": {
+  "experiment": "B",
+  "qid": "Q27"
+ },
+ "S043": {
+  "experiment": "A",
+  "qid": "Q12"
+ },
+ "S044": {
+  "experiment": "B",
+  "qid": "Q19"
+ },
+ "S045": {
+  "experiment": "D",
+  "qid": "Q25"
+ },
+ "S046": {
+  "experiment": "C",
+  "qid": "Q19"
+ },
+ "S047": {
+  "experiment": "B",
+  "qid": "Q16"
+ },
+ "S048": {
+  "experiment": "B",
+  "qid": "Q15"
+ },
+ "S049": {
+  "experiment": "D",
+  "qid": "Q16"
+ },
+ "S050": {
+  "experiment": "E",
+  "qid": "Q05"
+ },
+ "S051": {
+  "experiment": "C",
+  "qid": "Q04"
+ },
+ "S052": {
+  "experiment": "F",
+  "qid": "Q11"
+ },
+ "S053": {
+  "experiment": "E",
+  "qid": "Q14"
+ },
+ "S054": {
+  "experiment": "F",
+  "qid": "Q06"
+ },
+ "S055": {
+  "experiment": "B",
+  "qid": "Q13"
+ },
+ "S056": {
+  "experiment": "B",
+  "qid": "Q06"
+ },
+ "S057": {
+  "experiment": "A",
+  "qid": "Q28"
+ },
+ "S058": {
+  "experiment": "C",
+  "qid": "Q18"
+ },
+ "S059": {
+  "experiment": "B",
+  "qid": "Q02"
+ },
+ "S060": {
+  "experiment": "B",
+  "qid": "Q23"
+ },
+ "S061": {
+  "experiment": "B",
+  "qid": "Q20"
+ },
+ "S062": {
+  "experiment": "C",
+  "qid": "Q25"
+ },
+ "S063": {
+  "experiment": "D",
+  "qid": "Q08"
+ },
+ "S064": {
+  "experiment": "D",
+  "qid": "Q27"
+ },
+ "S065": {
+  "experiment": "F",
+  "qid": "Q07"
+ },
+ "S066": {
+  "experiment": "C",
+  "qid": "Q16"
+ },
+ "S067": {
+  "experiment": "B",
+  "qid": "Q17"
+ },
+ "S068": {
+  "experiment": "D",
+  "qid": "Q30"
+ },
+ "S069": {
+  "experiment": "D",
+  "qid": "Q11"
+ },
+ "S070": {
+  "experiment": "C",
+  "qid": "Q29"
+ },
+ "S071": {
+  "experiment": "E",
+  "qid": "Q26"
+ },
+ "S072": {
+  "experiment": "A",
+  "qid": "Q05"
+ },
+ "S073": {
+  "experiment": "A",
+  "qid": "Q02"
+ },
+ "S074": {
+  "experiment": "B",
+  "qid": "Q05"
+ },
+ "S075": {
+  "experiment": "B",
+  "qid": "Q08"
+ },
+ "S076": {
+  "experiment": "F",
+  "qid": "Q12"
+ },
+ "S077": {
+  "experiment": "B",
+  "qid": "Q26"
+ },
+ "S078": {
+  "experiment": "C",
+  "qid": "Q23"
+ },
+ "S079": {
+  "experiment": "D",
+  "qid": "Q03"
+ },
+ "S080": {
+  "experiment": "F",
+  "qid": "Q05"
+ },
+ "S081": {
+  "experiment": "C",
+  "qid": "Q11"
+ },
+ "S082": {
+  "experiment": "B",
+  "qid": "Q10"
+ },
+ "S083": {
+  "experiment": "B",
+  "qid": "Q22"
+ },
+ "S084": {
+  "experiment": "C",
+  "qid": "Q12"
+ },
+ "S085": {
+  "experiment": "B",
+  "qid": "Q03"
+ },
+ "S086": {
+  "experiment": "C",
+  "qid": "Q10"
+ },
+ "S087": {
+  "experiment": "E",
+  "qid": "Q15"
+ },
+ "S088": {
+  "experiment": "C",
+  "qid": "Q27"
+ },
+ "S089": {
+  "experiment": "B",
+  "qid": "Q29"
+ },
+ "S090": {
+  "experiment": "F",
+  "qid": "Q23"
+ },
+ "S091": {
+  "experiment": "A",
+  "qid": "Q16"
+ },
+ "S092": {
+  "experiment": "F",
+  "qid": "Q28"
+ },
+ "S093": {
+  "experiment": "D",
+  "qid": "Q22"
+ },
+ "S094": {
+  "experiment": "A",
+  "qid": "Q19"
+ },
+ "S095": {
+  "experiment": "C",
+  "qid": "Q01"
+ },
+ "S096": {
+  "experiment": "E",
+  "qid": "Q07"
+ },
+ "S097": {
+  "experiment": "E",
+  "qid": "Q17"
+ },
+ "S098": {
+  "experiment": "E",
+  "qid": "Q29"
+ },
+ "S099": {
+  "experiment": "A",
+  "qid": "Q14"
+ },
+ "S100": {
+  "experiment": "C",
+  "qid": "Q26"
+ },
+ "S101": {
+  "experiment": "D",
+  "qid": "Q20"
+ },
+ "S102": {
+  "experiment": "D",
+  "qid": "Q01"
+ },
+ "S103": {
+  "experiment": "E",
+  "qid": "Q16"
+ },
+ "S104": {
+  "experiment": "A",
+  "qid": "Q17"
+ },
+ "S105": {
+  "experiment": "D",
+  "qid": "Q09"
+ },
+ "S106": {
+  "experiment": "F",
+  "qid": "Q22"
+ },
+ "S107": {
+  "experiment": "E",
+  "qid": "Q20"
+ },
+ "S108": {
+  "experiment": "A",
+  "qid": "Q04"
+ },
+ "S109": {
+  "experiment": "D",
+  "qid": "Q14"
+ },
+ "S110": {
+  "experiment": "C",
+  "qid": "Q07"
+ },
+ "S111": {
+  "experiment": "C",
+  "qid": "Q06"
+ },
+ "S112": {
+  "experiment": "F",
+  "qid": "Q14"
+ },
+ "S113": {
+  "experiment": "C",
+  "qid": "Q13"
+ },
+ "S114": {
+  "experiment": "F",
+  "qid": "Q03"
+ },
+ "S115": {
+  "experiment": "F",
+  "qid": "Q19"
+ },
+ "S116": {
+  "experiment": "B",
+  "qid": "Q04"
+ },
+ "S117": {
+  "experiment": "C",
+  "qid": "Q08"
+ },
+ "S118": {
+  "experiment": "E",
+  "qid": "Q19"
+ },
+ "S119": {
+  "experiment": "B",
+  "qid": "Q21"
+ },
+ "S120": {
+  "experiment": "C",
+  "qid": "Q03"
+ },
+ "S121": {
+  "experiment": "F",
+  "qid": "Q15"
+ },
+ "S122": {
+  "experiment": "C",
+  "qid": "Q17"
+ },
+ "S123": {
+  "experiment": "D",
+  "qid": "Q21"
+ },
+ "S124": {
+  "experiment": "E",
+  "qid": "Q28"
+ },
+ "S125": {
+  "experiment": "E",
+  "qid": "Q10"
+ },
+ "S126": {
+  "experiment": "F",
+  "qid": "Q26"
+ },
+ "S127": {
+  "experiment": "B",
+  "qid": "Q25"
+ },
+ "S128": {
+  "experiment": "A",
+  "qid": "Q30"
+ },
+ "S129": {
+  "experiment": "E",
+  "qid": "Q08"
+ },
+ "S130": {
+  "experiment": "D",
+  "qid": "Q13"
+ },
+ "S131": {
+  "experiment": "A",
+  "qid": "Q24"
+ },
+ "S132": {
+  "experiment": "D",
+  "qid": "Q19"
+ },
+ "S133": {
+  "experiment": "D",
+  "qid": "Q29"
+ },
+ "S134": {
+  "experiment": "D",
+  "qid": "Q04"
+ },
+ "S135": {
+  "experiment": "D",
+  "qid": "Q05"
+ },
+ "S136": {
+  "experiment": "A",
+  "qid": "Q07"
+ },
+ "S137": {
+  "experiment": "C",
+  "qid": "Q20"
+ },
+ "S138": {
+  "experiment": "B",
+  "qid": "Q07"
+ },
+ "S139": {
+  "experiment": "D",
+  "qid": "Q28"
+ },
+ "S140": {
+  "experiment": "F",
+  "qid": "Q09"
+ },
+ "S141": {
+  "experiment": "C",
+  "qid": "Q15"
+ },
+ "S142": {
+  "experiment": "E",
+  "qid": "Q18"
+ },
+ "S143": {
+  "experiment": "F",
+  "qid": "Q21"
+ },
+ "S144": {
+  "experiment": "A",
+  "qid": "Q23"
+ },
+ "S145": {
+  "experiment": "C",
+  "qid": "Q28"
+ },
+ "S146": {
+  "experiment": "A",
+  "qid": "Q20"
+ },
+ "S147": {
+  "experiment": "F",
+  "qid": "Q27"
+ },
+ "S148": {
+  "experiment": "D",
+  "qid": "Q07"
+ },
+ "S149": {
+  "experiment": "D",
+  "qid": "Q02"
+ },
+ "S150": {
+  "experiment": "C",
+  "qid": "Q30"
+ },
+ "S151": {
+  "experiment": "C",
+  "qid": "Q05"
+ },
+ "S152": {
+  "experiment": "D",
+  "qid": "Q12"
+ },
+ "S153": {
+  "experiment": "B",
+  "qid": "Q24"
+ },
+ "S154": {
+  "experiment": "C",
+  "qid": "Q21"
+ },
+ "S155": {
+  "experiment": "F",
+  "qid": "Q17"
+ },
+ "S156": {
+  "experiment": "A",
+  "qid": "Q03"
+ },
+ "S157": {
+  "experiment": "D",
+  "qid": "Q26"
+ },
+ "S158": {
+  "experiment": "A",
+  "qid": "Q26"
+ },
+ "S159": {
+  "experiment": "C",
+  "qid": "Q14"
+ },
+ "S160": {
+  "experiment": "A",
+  "qid": "Q29"
+ },
+ "S161": {
+  "experiment": "A",
+  "qid": "Q21"
+ },
+ "S162": {
+  "experiment": "F",
+  "qid": "Q08"
+ },
+ "S163": {
+  "experiment": "A",
+  "qid": "Q01"
+ },
+ "S164": {
+  "experiment": "C",
+  "qid": "Q02"
+ },
+ "S165": {
+  "experiment": "D",
+  "qid": "Q23"
+ },
+ "S166": {
+  "experiment": "F",
+  "qid": "Q01"
+ },
+ "S167": {
+  "experiment": "E",
+  "qid": "Q06"
+ },
+ "S168": {
+  "experiment": "E",
+  "qid": "Q21"
+ },
+ "S169": {
+  "experiment": "E",
+  "qid": "Q27"
+ },
+ "S170": {
+  "experiment": "D",
+  "qid": "Q18"
+ },
+ "S171": {
+  "experiment": "E",
+  "qid": "Q23"
+ },
+ "S172": {
+  "experiment": "F",
+  "qid": "Q10"
+ },
+ "S173": {
+  "experiment": "F",
+  "qid": "Q04"
+ },
+ "S174": {
+  "experiment": "B",
+  "qid": "Q28"
+ },
+ "S175": {
+  "experiment": "A",
+  "qid": "Q27"
+ },
+ "S176": {
+  "experiment": "F",
+  "qid": "Q16"
+ },
+ "S177": {
+  "experiment": "E",
+  "qid": "Q12"
+ },
+ "S178": {
+  "experiment": "E",
+  "qid": "Q09"
+ },
+ "S179": {
+  "experiment": "C",
+  "qid": "Q22"
+ },
+ "S180": {
+  "experiment": "B",
+  "qid": "Q01"
+ }
+}

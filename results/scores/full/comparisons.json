@@ -1,0 +1,100 @@
+[
+  {
+    "comparison": "B vs A",
+    "effect_of": "RAG, base model",
+    "key_fact_accuracy": "0.230 vs 0.070 (diff +0.160)",
+    "key_fact_diff_95ci": [
+      0.057,
+      0.27
+    ],
+    "key_facts_discordant": "only B right: 19, only A right: 3",
+    "key_facts_mcnemar_p": 0.0009,
+    "fully_correct": "0 vs 0",
+    "fully_correct_discordant": "only B: 0, only A: 0",
+    "fully_correct_mcnemar_p": 1.0
+  },
+  {
+    "comparison": "D vs C",
+    "effect_of": "RAG, fine-tuned",
+    "key_fact_accuracy": "0.430 vs 0.020 (diff +0.410)",
+    "key_fact_diff_95ci": [
+      0.247,
+      0.581
+    ],
+    "key_facts_discordant": "only D right: 42, only C right: 1",
+    "key_facts_mcnemar_p": 0.0,
+    "fully_correct": "4 vs 0",
+    "fully_correct_discordant": "only D: 4, only C: 0",
+    "fully_correct_mcnemar_p": 0.125
+  },
+  {
+    "comparison": "D vs B",
+    "effect_of": "fine-tuning, with RAG",
+    "key_fact_accuracy": "0.430 vs 0.230 (diff +0.200)",
+    "key_fact_diff_95ci": [
+      0.095,
+      0.323
+    ],
+    "key_facts_discordant": "only D right: 22, only B right: 2",
+    "key_facts_mcnemar_p": 0.0,
+    "fully_correct": "4 vs 0",
+    "fully_correct_discordant": "only D: 4, only B: 0",
+    "fully_correct_mcnemar_p": 0.125
+  },
+  {
+    "comparison": "C vs A",
+    "effect_of": "fine-tuning, no RAG",
+    "key_fact_accuracy": "0.020 vs 0.070 (diff -0.050)",
+    "key_fact_diff_95ci": [
+      -0.124,
+      0.011
+    ],
+    "key_facts_discordant": "only C right: 2, only A right: 7",
+    "key_facts_mcnemar_p": 0.1797,
+    "fully_correct": "0 vs 0",
+    "fully_correct_discordant": "only C: 0, only A: 0",
+    "fully_correct_mcnemar_p": 1.0
+  },
+  {
+    "comparison": "D vs E",
+    "effect_of": "Qwen fine-tuned vs SmolLM2, with RAG",
+    "key_fact_accuracy": "0.430 vs 0.240 (diff +0.190)",
+    "key_fact_diff_95ci": [
+      0.076,
+      0.317
+    ],
+    "key_facts_discordant": "only D right: 22, only E right: 3",
+    "key_facts_mcnemar_p": 0.0002,
+    "fully_correct": "4 vs 3",
+    "fully_correct_discordant": "only D: 2, only E: 1",
+    "fully_correct_mcnemar_p": 1.0
+  },
+  {
+    "comparison": "B vs E",
+    "effect_of": "Qwen base vs SmolLM2, with RAG",
+    "key_fact_accuracy": "0.230 vs 0.240 (diff -0.010)",
+    "key_fact_diff_95ci": [
+      -0.141,
+      0.114
+    ],
+    "key_facts_discordant": "only B right: 10, only E right: 11",
+    "key_facts_mcnemar_p": 1.0,
+    "fully_correct": "0 vs 3",
+    "fully_correct_discordant": "only B: 0, only E: 3",
+    "fully_correct_mcnemar_p": 0.25
+  },
+  {
+    "comparison": "E vs F",
+    "effect_of": "RAG, SmolLM2",
+    "key_fact_accuracy": "0.240 vs 0.020 (diff +0.220)",
+    "key_fact_diff_95ci": [
+      0.11,
+      0.344
+    ],
+    "key_facts_discordant": "only E right: 24, only F right: 2",
+    "key_facts_mcnemar_p": 0.0,
+    "fully_correct": "3 vs 0",
+    "fully_correct_discordant": "only E: 3, only F: 0",
+    "fully_correct_mcnemar_p": 0.25
+  }
+]
