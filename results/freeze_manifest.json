@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-11-04T20:04:27",
+  "git_commit": "153f86afcc719b688a964350ab541daf8d35584c",
+  "uncommitted_code_changes": true,
+  "files": {
+    "app.py": "76647254f6da0329733d4f89743d77906e8a8a077ac14668adc30123d6ea9b3b",
+    "configs/config.yaml": "a9e65b5ad1fd648fa1d001c2cbd775ddba185e6d92b261af5b746545ee7f3079",
+    "requirements.txt": "b0076c3c7625e4fb83948a50b9f6d9ec9c55454aba4d86fa05b100f5cfe20c49",
+    "docs/rubric.md": "ae4c3dbe632f72022cde0e342f60aa6bef6f29bf8c8e9b943ea20842fc2b741e",
+    "data/evaluation.jsonl": "aa01489bc37a0731c50ab74700adacdad2f1e1fb1b21bdc418cdf75ef5a1feb8",
+    "vector_store/faiss.index": "bcff44d1b93e1cc0694ef45f70316c8d783d692c0010b004b059db9c1a3efc5e",
+    "vector_store/chunks.jsonl": "a0e2d3ee00bc1319f8c737e1cf82acecb7f03c7bd07fd5d7d2cfc570169e3df7",
+    "models/lora-adapter/adapter_model.safetensors": "7a9efbbd2afa2ad511e15568352c9b7026d5952a993519a39e716ef2d3ddaeee",
+    "models/lora-adapter/adapter_config.json": "2bd69e8c247803e78da1250c70201fe71d08f87a8af225d000a6631782a08152",
+    "src/abstain_threshold.py": "067fc675b680243ae2fea1679ed1cef61b6a9969f3dc22f15ce5a58996cc2b7b",
+    "src/build_index.py": "93dd35be372e19dedd0b8dd6f260604590d2456afeb3d91ddac271d6a323cd60",
+    "src/check_leakage.py": "bb712445e102bb521fb66bb95c140f3779165484e69280096933878fd5fb0842",
+    "src/chunking.py": "786e6e87ee6a95a94f091a37f9bb71256200a33112291d273ec9b3c9e5b8afe7",
+    "src/compare_embeddings.py": "6f19f2dc61acc714e0fda1eb239639299d844edff06ca5416a3a9944bd0f07b7",
+    "src/config.py": "d5c5db362a27fdcc8a89b296942a8c3c83d096f4c39e35b4d3840a5c93eaf692",
+    "src/convert_test_set.py": "57a31feda65473059ea1b7bb714d011c91dc4d7b892c3d7979b3b904b0fb205e",
+    "src/convert_training_data.py": "e50cf6c6c1da09dde81452d3f58199fba06c738d7c166bb607e79ebe37be5fd9",
+    "src/eval_relevance.py": "facaae09c96727f4c6c48c9e5e1da143b9733247e122ba0f2c1afeb1a08099b6",
+    "src/eval_retrieval.py": "347b5d7d07ec3955772e2dd930306f9a561308650805110e2ffc00e6914a066a",
+    "src/freeze.py": "c01df2b34f88b4e73688de08dafae6df7ca0fd9dee02060f20cc047abf5d8f74",
+    "src/llm.py": "1af5fda0ba761ac8b23f22216a2f097e860b76c3c2bce1ef751193a15c05d599",
+    "src/part_map.py": "5fd76a708915b617cee79a13adca916d2797ace53a33f3909d6b44c08ac71bff",
+    "src/pipeline.py": "4ab14f0e707c08bb77d414c7fc3aee506f5489ce4a5c8f77ff5798a947ecb132",
+    "src/prompts.py": "8056c7088c044d59eb5f3a4d0894ed03a03120ac544d100cb67a4e4f99b2a63a",
+    "src/retrieval.py": "16b4958c27b45ca17e6910c1e91fdf8b8f904cf88ea3df69fe162dcc6936ae74",
+    "src/run_experiments.py": "90bef7c9226ce462a9c497de3457ce58509db963470e090dfad6193e4a449141",
+    "src/smoke_test.py": "eb6bd15b934f31f8428c1252d911c1fbc88c331fefc6162c13ad60765994db04",
+    "src/verify_sections.py": "0e501f9d29d66f79423a1e15a4d5da7c16fa3d367e1c6a6e37486f9b26d71971"
+  },
+  "models": {
+    "Qwen/Qwen2.5-1.5B-Instruct": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "HuggingFaceTB/SmolLM2-1.7B-Instruct": "31b70e2e869a7173562077fd711b654946d38674",
+    "sentence-transformers/all-MiniLM-L6-v2": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "libraries": {
+    "torch": "2.15.0",
+    "transformers": "5.22.1",
+    "peft": "0.21.2",
+    "sentence-transformers": "6.2.0",
+    "faiss-cpu": "1.15.1",
+    "langchain-core": "1.7.4"
+  }
+}

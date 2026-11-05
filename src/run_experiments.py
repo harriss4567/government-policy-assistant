@@ -7,6 +7,7 @@ Usage:
     .venv/bin/python src/run_experiments.py --ids Q08,Q16,Q27 --tag smoke       # smoke test, all experiments
     .venv/bin/python src/run_experiments.py --experiments A,B,C,D,E --tag full  # Day 4
 Writes: results/runs/<tag>/<experiment>.jsonl  (one line per question) and results/runs/<tag>/health.json
+Any tag except "smoke" first checks the freeze manifest (src/freeze.py) and refuses to run if anything changed.
 
 The printout shows only run health (did it run, valid JSON, retries, answered/abstained, time, tokens),
 not the answers themselves: test answers are read only when scoring, after the pipeline is frozen.
@@ -21,6 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import ROOT, load_config  # noqa: E402
+from freeze import MANIFEST, check as freeze_check  # noqa: E402
 from pipeline import Pipeline  # noqa: E402
 
 
@@ -43,6 +45,12 @@ def main():
     ap.add_argument("--ids", default=None, help="comma-separated question ids (default: all 30)")
     ap.add_argument("--tag", default="run")
     a = ap.parse_args()
+
+    if a.tag != "smoke":                                  # real runs must use the frozen pipeline
+        diffs = freeze_check()
+        if diffs:
+            sys.exit("Refusing to run: the pipeline changed since it was frozen.\n  " + "\n  ".join(diffs))
+        print(f"Frozen pipeline verified ({json.loads(MANIFEST.read_text())['frozen_at']})")
 
     cfg = load_config()
     questions = [json.loads(l) for l in open(cfg["paths"]["evaluation"], encoding="utf-8")]
@@ -86,6 +94,8 @@ def main():
               f"{h['questions']} questions, crashed {h['crashed']}, valid JSON {h['valid_json']}/{h['province_answers']}, "
               f"retries {h['retries']}, {h['status']}, quotes verified {h['quote_verified']}, "
               f"{h['avg_seconds_per_question']}s and {h['avg_tokens_per_question']} tokens per question", flush=True)
+    if MANIFEST.exists():
+        health["_frozen"] = {k: json.loads(MANIFEST.read_text())[k] for k in ("frozen_at", "git_commit")}
     (out_dir / "health.json").write_text(json.dumps(health, indent=2))
     print(f"Wrote {out_dir}")
 
